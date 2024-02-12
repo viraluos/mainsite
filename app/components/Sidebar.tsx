@@ -16,12 +16,7 @@ import { useMemo } from "react";
 
 // import - from -
 
-interface SidebarProps {
-    children?: React.ReactNode;
-    className?: string;
-}
-
-const Sidebar: React.FC<SidebarProps> = ({}) => {
+const Sidebar = ({}) => {
     const pathname = usePathname();
 
     const routes = useMemo(() => [
@@ -43,8 +38,8 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
     ], [pathname]);
 
     return(
-        <div className="w-full md:w-fit">
-            <Box className="mb-4">
+        <div className="hidden md:block w-[550px]">
+            <Box className="mb-2">
                 <div className="flex flex-col px-5 py-4 gap-y-4">
                     {routes.map((item) => (
                         <Links key={item.label} {...item} />
@@ -53,7 +48,7 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
             </Box>
 
         {
-            <div className="w-full md:w-fit">
+            <div className="w-fit md:w-full">
                 <Box className="p-4">
                     <div className="mb-4 text-xl">
                         Testo importante i dont believe you.

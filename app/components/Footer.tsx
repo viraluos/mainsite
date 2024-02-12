@@ -1,13 +1,19 @@
 "use client"
 
-import Box from "@/components/Box";
+import { twMerge } from "tailwind-merge";
 
-const Footer = ({}) => {
+interface FooterProps {
+    children?: React.ReactNode;
+    className?: string;
+}
+
+const Footer: React.FC<FooterProps> = ({
+    children,
+    className
+}) => {
     return(
-        <div className="w-full px-4 pb-4">
-            <Box className="w-full p-4">
-                Footer
-            </Box>
+        <div className={twMerge( `w-full p-6 bg-neutral-900`, className)}>
+            {children}
         </div>
     );
 }

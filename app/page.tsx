@@ -1,4 +1,3 @@
-import Footer from "./components/Footer";
 import Content from "./components/Content";
 
 export default function Home(){
@@ -6,8 +5,6 @@ export default function Home(){
     <div className="w-full h-full overflow-hidden overflow-y-auto bg-neutral-900" >
 
       <Content></Content>
-
-      <Footer></Footer>
 
     </div>
   );

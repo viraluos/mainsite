@@ -1,7 +1,7 @@
 "use client"
 
 import Sidebar from "./Sidebar";
-import PageContent from "./PageContent"
+import PageContent from "./PageContent";
 
 /*
 interface NavbarProps{
@@ -11,14 +11,11 @@ interface NavbarProps{
 
 const Content = ({}) => {
     return(
-        <div className="flex h-full gap-4 p-4">
+        <div className="flex h-full gap-2 p-2">
+
             <Sidebar></Sidebar>
 
             <PageContent></PageContent>
-
-            {
-                // footer
-            }
 
         </div>
     );
