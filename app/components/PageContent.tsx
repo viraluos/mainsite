@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const PageContent = ({}) => {
     return(
-        <div className="w-full rounded-lg bg-neutral-800">
+        <div className="flex flex-col justify-between w-full rounded-lg bg-neutral-800">
 
             <Header className="rounded-lg"></Header>
 
