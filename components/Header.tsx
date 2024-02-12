@@ -1,8 +1,7 @@
 "use client"
 
-
-import Button from "@/components/Button"
-import Box from "@/components/Box"
+import Button from "./Button"
+import Box from "./Box"
 
 import { useRouter } from "next/navigation";
 import { twMerge } from "tailwind-merge";
@@ -19,10 +18,10 @@ const Header: React.FC<HeaderProps> = ({
     const router = useRouter();
 
     return(
-        <div className={twMerge(`h-fit bg-gradient-to-b from-purple-700 p-6`, className )}>
+        <div className={twMerge(`h-fit p-6`, className )}>
             <div className="flex items-center justify-between">
                 <p className="text-3xl transition-all hover:[text-shadow:_0_5px_5px_#045f32] h-fit ">
-                    Logo
+                    {children}
                 </p>
 
                 <div className="flex gap-x-4">

@@ -7,7 +7,7 @@ const PageContent = ({}) => {
     return(
         <div className="flex flex-col justify-between w-full rounded-lg bg-neutral-800">
 
-            <Header className="rounded-lg bg-gradient-to-b from-purple-700">Main page</Header>
+            <Header className="rounded-lg bg-gradient-to-b from-yellow-700">Musxfy</Header>
 
             <Footer>Footer</Footer>
 

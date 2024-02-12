@@ -8,8 +8,8 @@ import { MdSubtitles } from "react-icons/md";
 import { LuListTodo } from "react-icons/lu";
 
 // import Button from "@/components/Button";
-import Links from "./sidebar-comps/Link";
-import Box from "@/components/Box";
+import Links from "./Link";
+import Box from "./Box";
 
 import { usePathname } from "next/navigation";
 import { useMemo } from "react";
