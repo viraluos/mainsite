@@ -1,3 +1,1 @@
-const Display = true;
-
-export default Display;
+export default true;
