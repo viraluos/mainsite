@@ -1,7 +1,9 @@
 "use client"
 
-import Sidebar from "@/components/Sidebar";
+import Sidebar from "./Sidebar";
 import PageContent from "./PageContent";
+
+import { usePathname } from "next/navigation";
 
 /*
 interface NavbarProps{
@@ -10,12 +12,14 @@ interface NavbarProps{
 */
 
 const Content = ({}) => {
+    const pathname = usePathname();
+    
     return(
         <div className="flex h-full gap-2 p-2">
 
             <Sidebar></Sidebar>
 
-            <PageContent></PageContent>
+            <PageContent>{pathname}</PageContent>
 
         </div>
     );

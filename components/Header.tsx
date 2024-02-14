@@ -25,8 +25,8 @@ const Header: React.FC<HeaderProps> = ({
                 </p>
 
                 <div className="flex gap-x-4">
-                    <Button>Button 1</Button>
-                    <Button>Button 2</Button>
+                    <Button>About</Button>
+                    <Button>Contact</Button>
                     <Button>Button 3</Button>
                 </div>
 
