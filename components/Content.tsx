@@ -4,18 +4,21 @@ import Sidebar from "./Sidebar";
 import PageContent from "./PageContent";
 
 import { usePathname } from "next/navigation";
+import React from "react";
 
-/*
-interface NavbarProps{
-    children: React.ReactNode;
+import { twMerge } from "tailwind-merge";
+
+interface Content{
+    className?: string;
 }
-*/
 
-const Content = ({}) => {
+const Content: React.FC<Content> = ({
+    className,
+}) => {
     const pathname = usePathname();
     
     return(
-        <div className="flex h-full gap-2 p-2">
+        <div className={twMerge(`flex h-full gap-2 p-2`, className)}>
 
             <Sidebar></Sidebar>
 
